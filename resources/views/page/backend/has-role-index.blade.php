@@ -1,7 +1,7 @@
 @extends('layout.backend.auth')
 
 @section('content')
-    <div class="content">
+    {{-- <div class="content">
         <div class="page-header">
             <div class="page-title">
                 <h4>Dashboard</h4>
@@ -23,9 +23,6 @@
                 </div>
             </div>
         </div>
-
-
-
 
         <div class="card">
             <div class="card-body">
@@ -141,7 +138,5 @@
             </div>
         </div>
 
-    </div>
-
-
+    </div> --}}
 @endsection

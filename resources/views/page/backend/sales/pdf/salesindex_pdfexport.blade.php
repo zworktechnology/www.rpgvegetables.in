@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <style>
         #customers {
@@ -78,13 +79,13 @@
         .logoname {
             display: flex;
         }
-
     </style>
 </head>
+
 <body>
-   <div class="logoname">
+    <div class="logoname">
         <div>
-            <h4  style="text-transform: uppercase; color:red;text-align:center;">SALES - BILL</h4>
+            <h4 style="text-transform: uppercase; color:red;text-align:center;">SALES - BILL</h4>
             <h4 style="text-align:right;">Date : {{$today}}</h4>
         </div>
     </div>
@@ -93,35 +94,38 @@
     <table id="customers">
         <thead style="background: #5e54c966">
             <tr>
-            <th style="font-size:14px;">S.No</th>
-                                <th style="font-size:14px;">Customer-<br/>Bill No</th>
-                                <th style="font-size:14px;">Branch</th>
-                                <th style="font-size:14px;">Product Details</th>
-                                <th style="font-size:14px;">Total</th>
-                                <th style="font-size:14px;">Old Balance</th>
-                                <th style="font-size:14px;">Grand Total</th>
+                <th style="font-size:14px;">S.No</th>
+                <th style="font-size:14px;">Customer-<br />Bill No</th>
+                <th style="font-size:14px;">Branch</th>
+                <th style="font-size:14px;">Product Details</th>
+                <th style="font-size:14px;">Total</th>
+                <th style="font-size:14px;">Old Balance</th>
+                <th style="font-size:14px;">Grand Total</th>
             </tr>
         </thead>
         <tbody id="customer_index">
             @foreach ($Sales_data as $keydata => $Sales_datas)
             <tr>
-            <td style="font-size:13px;">{{ ++$keydata }}</td>
-                                    <td style="font-size:13px;">{{ $Sales_datas['customer_name'] }}-<br/>#{{ $Sales_datas['bill_no'] }}</td>
-                                    <td style="font-size:13px;">{{ $Sales_datas['branch_name'] }}</td>
-                                    <td style="font-size:13px;">
-                                    @foreach ($Sales_datas['sales_terms'] as $index => $terms_array)
-                                                    @if ($terms_array['sales_id'] == $Sales_datas['id'])
-                                                    {{ $terms_array['product_name'] }} - {{ $terms_array['kgs'] }}{{ $terms_array['bag'] }}-{{ $terms_array['price_per_kg'] }},<br/>
-                                                    @endif
-                                                    @endforeach
-                                    </td>
-                                    <td style="font-size:13px;">{{ $Sales_datas['gross_amount'] }}</td>
-                                    <td style="font-size:13px;">{{ $Sales_datas['old_balance'] }}</td>
-                                    <td style="font-size:13px;">{{ $Sales_datas['grand_total'] }}</td>
+                <td style="font-size:13px;">{{ ++$keydata }}</td>
+                <td style="font-size:13px;">{{ $Sales_datas['customer_name'] }}-<br />#{{ $Sales_datas['bill_no'] }}
+                </td>
+                <td style="font-size:13px;">{{ $Sales_datas['branch_name'] }}</td>
+                <td style="font-size:13px;">
+                    @foreach ($Sales_datas['sales_terms'] as $index => $terms_array)
+                    @if ($terms_array['sales_id'] == $Sales_datas['id'])
+                    {{ $terms_array['product_name'] }} - {{ $terms_array['kgs'] }}{{ $terms_array['bag'] }}-{{
+                    $terms_array['price_per_kg'] }},<br />
+                    @endif
+                    @endforeach
+                </td>
+                <td style="font-size:13px;">{{ $Sales_datas['gross_amount'] }}</td>
+                <td style="font-size:13px;">{{ $Sales_datas['old_balance'] }}</td>
+                <td style="font-size:13px;">{{ $Sales_datas['grand_total'] }}</td>
             </tr>
             @endforeach
         </tbody>
     </table>
-    
+
 </body>
+
 </html>

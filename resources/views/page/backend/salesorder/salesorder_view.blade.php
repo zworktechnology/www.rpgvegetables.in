@@ -11,8 +11,7 @@
         <div class="modal-body">
             <div class="card">
                 <div class="card-body">
-                    <h4 style="text-align: center; font-weight:700; color:blue; margin-bottom: 10px;">Thirupathi Trading
-                        Co.,</h4>
+                    <h4 style="text-align: center; font-weight:700; color:blue; margin-bottom: 10px;">R.P Gurusamy Traders</h4>
                     <div class="invoice-box table-height"
                         style="max-width: 1600px;width:100%;overflow: auto;padding: 0;font-size: 14px;line-height: 24px;color: #555;">
                         <div class="row">

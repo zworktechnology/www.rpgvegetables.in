@@ -94,7 +94,7 @@
                               </select>
                            </td>
                            <td><input type="text" class="form-control sales_count" id="sales_count" name="sales_count[]" placeholder="count" value="" required /></td>
-                           <td><input type="text" class="form-control sales_note" id="sales_note" name="sales_note[]" placeholder="note" value="" required /></td>
+                           <td><input type="text" class="form-control sales_note" id="sales_note" name="sales_note[]" placeholder="note" value="" /></td>
                            <td><input type="text" class="form-control sales_priceperkg" id="sales_priceperkg" name="sales_priceperkg[]" placeholder="Price Per Count" value="" required /></td>
                            <td class="text-end"><input type="text" class="form-control sales_total_price" readonly id="sales_total_price"  style="background-color: #e9ecef;" name="sales_total_price[]" placeholder="" value="" required /></td>
                            <td><button style="width: 35px;"class="py-1 text-white font-medium rounded-lg text-sm  text-center btn btn-primary addsalesorderfields"
