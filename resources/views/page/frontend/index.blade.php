@@ -10,7 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
     <style>
         body{
-            background-image:url("assets/frontend/images/1.jpeg");
+            background-image:url("assets/frontend/images/1.jpg");
             font-family: Georgia, serif;
             background-repeat: no-repeat;
             background-position: center;
@@ -22,11 +22,11 @@
              display: block;
              margin-left: auto;
              margin-right: auto;
-             padding: 90px 0px 0px 0px;
+             padding: 90px 160px 0px 0px;
         }
     </style>
 </head>
 <body>
-        <img src="{{ asset('assets/frontend/images/2.png') }}">
+        <img src="{{ asset('assets/frontend/images/2.png') }}" width="1000px;">
 </body>
 </html>
