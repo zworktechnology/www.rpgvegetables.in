@@ -92,7 +92,8 @@
                         <div class="col-lg-3 col-sm-3 col-3">
                             <div class="form-group">
                                 <label style="font-size:15px;padding-top: 5px;padding-bottom: 2px;">Payable Amount <span style="color: red;">*</span></label>
-                                <input type="text" name="spayment_payableamount" id="spayment_payableamount" class="spayment_payableamount" placeholder="Enter Amount" required>
+                                <input type="number" name="spayment_payableamount" id="spayment_payableamount" 
+                                class="form-control spayment_payableamount" placeholder="Enter Amount" required>
                             </div>
                         </div>
 

@@ -67,7 +67,7 @@
                                             <input type="text" class="form-control expense_note" id="expense_note" name="expense_note[]" placeholder="Note" value="" required />
                                         </td>
                                         <td>
-                                            <input type="text" class="form-control expense_amount" id="expense_amount" name="expense_amount[]" placeholder="Amount" value="" required />
+                                            <input type="number" class="form-control expense_amount" id="expense_amount" name="expense_amount[]" placeholder="Amount" value="" required />
                                         </td>
                                         <td>
                                             <button style="width: 35px;"class="addexpensefilds py-1 text-white font-medium rounded-lg text-sm  text-center btn btn-primary"

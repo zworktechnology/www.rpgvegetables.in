@@ -179,7 +179,7 @@
                                     <tr>
                                         <td colspan="5" class="text-end" style="font-size:15px;color: black;">Payable
                                             Amount<span style="color: red;">*</span></td>
-                                        <td colspan="2"><input type="text" class="form-control payable_amount"
+                                        <td colspan="2"><input type="number" class="form-control payable_amount"
                                                 name="payable_amount" placeholder="Payable Amount" required
                                                 value="{{ $PurchaseData->paid_amount }}" id="payable_amount"></td>
                                     </tr>

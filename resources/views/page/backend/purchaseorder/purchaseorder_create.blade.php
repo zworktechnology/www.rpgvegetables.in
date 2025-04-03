@@ -219,7 +219,7 @@
                                         </td>
                                         <td colspan="1" class="text-end" style="font-size:15px;color: black;">Payable Amount<span style="color: red;"> *</span></td>
                                         <td colspan="2">
-                                            <input type="text" class="form-control payable_amount" name="payable_amount" placeholder="Payable Amount" required value="" id="payable_amount"></td>
+                                            <input type="number" class="form-control payable_amount" name="payable_amount" placeholder="Payable Amount" required value="" id="payable_amount"></td>
                                         <td></td>
 
                                     </tr>
@@ -239,7 +239,7 @@
                     </div>
 
                     <div class="modal-footer">
-                        <input type="submit" class="btn btn-primary" onclick="purchase_ordersubmitForm(this);" />
+                        <input type="submit" class="btn btn-primary" />
                         <a href="{{ route('purchaseorder.purchaseorder_index') }}" class="btn btn-danger" value="">Cancel</a>
                     </div>
                 </form>

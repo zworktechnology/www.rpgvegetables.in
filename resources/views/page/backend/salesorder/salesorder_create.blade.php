@@ -142,7 +142,7 @@
                             @endforeach
                          </select></td>
                            <td colspan="1" class="text-end" style="font-size:15px;color: black;">Payable Amount<span style="color: red;"> *</span></td>
-                           <td colspan="2"><input type="text" class="form-control salespayable_amount" name="salespayable_amount" placeholder="Payable Amount" id="salespayable_amount" required></td>
+                           <td colspan="2"><input type="number" class="form-control salespayable_amount" name="salespayable_amount" placeholder="Payable Amount" id="salespayable_amount" required></td>
                         </tr>
                         <tr>
                            <td colspan="4" class="text-end" style="font-size:15px;color: black;">Pending Amount</td>
@@ -155,7 +155,7 @@
 
 
             <div class="modal-footer">
-            <input type="submit" class="btn btn-primary" onclick="salesordersubmitForm(this);"/>
+            <input type="submit" class="btn btn-primary" />
                <a href="{{ route('salesorder.salesorder_index') }}" class="btn btn-danger" value="">Cancel</a>
             </div>
          </form>

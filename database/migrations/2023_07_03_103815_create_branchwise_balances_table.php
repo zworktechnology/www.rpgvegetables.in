@@ -22,7 +22,7 @@ return new class extends Migration
             $table->unsignedBigInteger('customer_id')->nullable();
             $table->foreign('customer_id')->references('id')->on('customers')->onDelete('cascade');
 
-            $table->unsignedBigInteger('branch_id');
+            $table->unsignedBigInteger('branch_id')->nullable();
             $table->foreign('branch_id')->references('id')->on('branches')->onDelete('cascade');
 
             $table->string('purchase_amount')->nullable();
